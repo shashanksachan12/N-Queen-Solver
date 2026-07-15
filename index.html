@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N-Queen Problem Solver</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <div class="header">
+          <div>
+            <p class="eyebrow">Backtracking Solver</p>
+            <h1>N-Queen Problem Solver</h1>
+            <p class="subtitle">
+              Enter N and solve the classic N-Queens problem using backtracking.
+            </p>
+          </div>
+          <div class="controls-top">
+            <label class="field">
+              <span>Input N (4–12)</span>
+              <input id="nInput" type="number" min="4" max="12" value="8" />
+            </label>
+            <button id="solveBtn" type="button">First Solution</button>
+            <button id="nextBtn" type="button">Next Solution</button>
+            <button id="resetBtn" class="secondary" type="button">Reset</button>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <div class="stats">
+            <div class="stat-card">
+              <span>First Solution</span>
+              <strong id="solutionStatus">Waiting</strong>
+            </div>
+            <div class="stat-card">
+              <span>Total Solutions</span>
+              <strong id="solutionCount">0</strong>
+            </div>
+          </div>
+        </div>
+
+        <div id="board" class="board"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
